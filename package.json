@@ -1,0 +1,49 @@
+{
+  "name": "dsh-approval-enter",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Press Enter to approve a pending approval request in DeepSeek Harness (DSH) — no mouse click needed, and typing a message still sends it.",
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "approval",
+    "keyboard",
+    "enter"
+  ],
+  "license": "MIT",
+  "author": "lxj5820",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "README.md",
+    "LICENSE"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": []
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jklin6632-dot/dsh-approval-enter.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jklin6632-dot/dsh-approval-enter/issues"
+  },
+  "homepage": "https://github.com/jklin6632-dot/dsh-approval-enter#readme"
+}
